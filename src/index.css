@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px;
+  border-radius: 1rem;
+  padding: 1rem;
+  will-change: transform;
+  transition: transform 250ms ease-in-out;
+}
+
+.grass {
+  border: 1px solid #78C850;
+  background: linear-gradient(135deg, #A8E063, #DFFFD8);
+}
+
+.fire {
+  border: 1px solid #FF6F61;
+  background: linear-gradient(135deg, #FF8C42, #FFE5D9);
+}
+
+.water {
+  border: 1px solid #4C9AFF;
+  background: linear-gradient(135deg, #70BFFF, #E3F2FD);
+}
+
+.electric {
+  border: 1px solid #F7D02C;
+  background: linear-gradient(135deg, #FFEA70, #FFF9C4);
+}
+
+.psychic {
+  border: 1px solid #F95587;
+  background: linear-gradient(135deg, #FF5F9E, #FFE3F3);
+}
+
+.dark {
+  border: 1px solid #705848;
+  background: linear-gradient(135deg, #8D6F5E, #D7CCC8);
+}
+
+.fairy {
+  border: 1px solid #EE99AC;
+  background: linear-gradient(135deg, #FFB6C1, #FCE4EC);
+}
+
+.bug {
+  border: 1px solid #91A119;
+  background: linear-gradient(135deg, #A8B820, #D0E7A7);
+}
+
+.normal {
+  border: 1px solid #8D8D68;
+  background: linear-gradient(135deg, #A8A77A, #F5F5DC);
+}
+
+.poison {
+  border: 1px solid #A33EA1;
+  background: linear-gradient(135deg, #B566CC, #E0A7F0);
+}
+
+.ground {
+  border: 1px solid #E2BF65;
+  background: linear-gradient(135deg, #C18847, #F5E3B3);
+}
+
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+}
+
+.card:hover {
+  cursor: pointer;
+  transform: scale(1.2) rotateZ(5deg);
+}
+
+.scores {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 0.4rem;
+}
+
+.display-cards {
+  padding: 1rem;
+}
