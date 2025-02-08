@@ -1,10 +1,8 @@
 import { useState, useEffect } from "react";
 
-
 function getRandomInt(max) {
     return Math.floor(Math.random() * max);
 };
-
 
 function Card({ onClick }) {
 
